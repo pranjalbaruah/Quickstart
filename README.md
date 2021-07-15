@@ -18,11 +18,11 @@
 
 <p><strong>NOTE:</strong> Click on hyperlinks below to view detailed information about Installation wizard:</p>
 
-<ol>
+<ul>
 <li><a href="https://doc.owncloud.com/server/10.8/admin_manual/installation/installation_wizard.html#installation-configuration-options">Installation Configuration options</a></li>
 <li><a href="https://doc.owncloud.com/server/10.8/admin_manual/installation/installation_wizard.html#database-setup-by-owncloud">Database Setup by ownCloud</a></li>
 <li><a href="https://doc.owncloud.com/server/10.8/admin_manual/installation/installation_wizard.html#post-installation-steps">Post-Installation Steps</a></li>
-</ol>
+</ul>
 
 <h2>As an administrator, how do I add a user account?</h2>
 
@@ -67,7 +67,7 @@
 <li>Go to the Administration page to configure it</li>
 </ol>
 
-<p><strong>NOTE:</strong> LDAP configuration panel has four tabs:</p>
+<p>LDAP Administration page has four tabs:</p>
 
 <ol>
 <li>Server</li>
@@ -107,6 +107,5 @@
 <li><a href="https://doc.owncloud.com/server/admin_manual/configuration/user/user_auth_ldap.html#login-filter">Login Filter</a></li>
 <li><a href="https://doc.owncloud.com/server/admin_manual/configuration/user/user_auth_ldap.html#testing-the-configuration">Testing the Configuration</a></li>
 </ul>
-
 
 
