@@ -42,13 +42,15 @@
 
 <h2>As an administrator, how do I connect to the ownCloud server using a desktop or mobile client?</h2>
 
-<p>OpenID Connect which is an open standard for single sign-on, identity and access management helps to connect to the ownCloud server using a desktop or mobile client. It can be used for user authentication and client authorization against an External Identity Provider(IdP).</p>
+<p>OpenID Connect(OIDC) which is an open standard for Single Sign-On(SSO), Identity and Access management helps to connect to the ownCloud server using a desktop or mobile client. It can be used for user authentication and client authorization against an External Identity Provider(IdP).</p>
 
 <p><strong>IMPORTANT:</strong> ownCloud only supports one configured identity provider which is valid for all requests.</p>
 
-<p><strong>NOTE:</strong> Please click on following hyperlinks for more details: </p>
+<p><strong>NOTE:</strong> Please click on following hyperlinks for more details:</p>
 
 <ul>
+<li><a href="https://doc.owncloud.com/server/admin_manual/configuration/user/oidc/oidc.html#introduction">Introduction</a></li>
+<li><a href="https://doc.owncloud.com/server/admin_manual/configuration/user/oidc/oidc.html#supported-identity-providers">Supported Identity Providers</a></li>
 <li><a href="https://doc.owncloud.com/server/10.8/admin_manual/configuration/user/oidc/oidc.html#prerequisites">Prerequisites</a></li>
 <li><a href="https://doc.owncloud.com/server/10.8/admin_manual/configuration/user/oidc/oidc.html#set-up-service-discovery">Set Up Service Discovery</a> </li>
 <li><a href="https://doc.owncloud.com/server/10.8/admin_manual/configuration/user/oidc/oidc.html#owncloud-desktop-and-mobile-clients">ownCloud Desktop and Mobile Clients</a> </li>
@@ -56,19 +58,54 @@
 
 <h2>As an administrator, how do I enable users to connect to the ownCloud server using the server's IP address and port 8080?</h2>
 
-<p>The standard is to use [protocol]://[IP]:[port]. Example: http://127.0.0.1:8080.</p>
+<p>Integrating Lightweight Directory Access Protocol(LDAP) application allows you to enable users to connect to the ownCloud server using the server's IP address and port 8080. </p>
 
-<p>You can install and configure <a href="https://letsencrypt.org/">Let's Encypt</a> SSL certificate which is the certificate authority for your ownCloud server. Certificates can be used by ownCloud to enable secure HTTPS connections using server's IP address and port.</p>
+<p>To configure :</p>
+
+<ol>
+<li>Install the <a href="https://marketplace.owncloud.com/apps/user_ldap">LDAP Integration application</a></li>
+<li>Go to the Administration page to configure it</li>
+</ol>
+
+<p><strong>NOTE:</strong> LDAP configuration panel has four tabs:</p>
+
+<ol>
+<li>Server</li>
+<li>Users</li>
+<li>Login Attributes</li>
+<li>Groups</li>
+</ol>
+
+<p><strong>IMPORTANT:</strong> You can enable users to connect to the ownCloud server by configuring settings in Server, Users and Login Attributes tabs.</p>
+
+<p><img src="https://doc.owncloud.com/server/admin_manual/_images/apps/user_ldap/ldap-wizard/server-tab.png" alt="alt text" title="" /></p>
+
+<h3>Server tab</h3>
+
+<p>Correctly filling the Server tab's form is mandatory to access to other tabs. A green indicator light appears when the configuration is correct. Hover your cursor over the fields to see some pop-up tooltips.</p>
+
+<h3>Users tab</h3>
+
+<p>This interface is used to control which LDAP users are listed as ownCloud users on your ownCloud server. Use the Login Attributes tab in order to control which LDAP users can log in to your ownCloud server. If you prefer, bypass the form fields and enter a raw LDAP filter. </p>
+
+<p><img src="https://doc.owncloud.com/server/admin_manual/_images/apps/user_ldap/ldap-wizard/users-tab.png" alt="alt text" title="" /></p>
+
+<h3>Login Attributes tab</h3>
+
+<p>The settings in the Login Attributes tab determine which LDAP users can log in to your ownCloud system. You may select multiple user details. If you prefer, bypass the form fields and enter a raw LDAP filter. </p>
+
+<p><img src="https://doc.owncloud.com/server/admin_manual/_images/apps/user_ldap/ldap-wizard/login-attributes-tab.png" alt="alt text" title="" /></p>
 
 <p><strong>NOTE:</strong> Please click on following hyperlinks for more details:</p>
 
 <ul>
-<li><a href="https://doc.owncloud.com/server/admin_manual/installation/letsencrypt/using_letsencrypt.html#requirements-dependencies">Requirement and Dependencies</a></li>
-<li><a href="https://doc.owncloud.com/server/admin_manual/installation/letsencrypt/using_letsencrypt.html#install-lets-encrypts-certbot-client">Install Let's Encrypt Certbot Client</a></li>
-<li><a href="https://doc.owncloud.com/server/admin_manual/installation/letsencrypt/using_letsencrypt.html#register-your-email-address">Register your Email Address</a></li>
-<li><a href="https://doc.owncloud.com/server/admin_manual/installation/letsencrypt/using_letsencrypt.html#create-lets-encrypts-config-files">Create Let's Encrypt Configuration Files</a></li>
-<li><a href="https://doc.owncloud.com/server/admin_manual/installation/letsencrypt/using_letsencrypt.html#create-an-ssl-certificate">Create an SSL Certificate</a></li>
-<li><a href="https://doc.owncloud.com/server/admin_manual/installation/letsencrypt/using_letsencrypt.html#web-server-setup">Web Server Setup</a></li>
+<li><a href="https://doc.owncloud.com/server/admin_manual/configuration/user/user_auth_ldap.html#introduction">Introduction</a></li>
+<li><a href="https://doc.owncloud.com/server/admin_manual/configuration/user/user_auth_ldap.html#configuration">Configuration</a></li>
+<li><a href="https://doc.owncloud.com/server/admin_manual/configuration/user/user_auth_ldap.html#server-tab">Server Tab</a></li>
+<li><a href="https://doc.owncloud.com/server/admin_manual/configuration/user/user_auth_ldap.html#ldaps-configuration">LDAPS Configuration</a></li>
+<li><a href="https://doc.owncloud.com/server/admin_manual/configuration/user/user_auth_ldap.html#user-filter">User Filter</a></li>
+<li><a href="https://doc.owncloud.com/server/admin_manual/configuration/user/user_auth_ldap.html#login-filter">Login Filter</a></li>
+<li><a href="https://doc.owncloud.com/server/admin_manual/configuration/user/user_auth_ldap.html#testing-the-configuration">Testing the Configuration</a></li>
 </ul>
 
 
