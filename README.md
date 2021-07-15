@@ -2,7 +2,7 @@
 
 <h2>As an administrator, how do I install and configure an ownCloud server?</h2>
 
-<p><strong>IMPORTANT:</strong> When the ownCloud prerequisites are fulfilled and all ownCloud files are installed, you can install and configure an ownCloud server by running the Installation wizard. </p>
+<p>When the ownCloud prerequisites are fulfilled and all ownCloud files are installed, you can install and configure an ownCloud server by running the Installation wizard. </p>
 
 <p>This involves three steps:</p>
 
@@ -107,5 +107,6 @@
 <li><a href="https://doc.owncloud.com/server/admin_manual/configuration/user/user_auth_ldap.html#login-filter">Login Filter</a></li>
 <li><a href="https://doc.owncloud.com/server/admin_manual/configuration/user/user_auth_ldap.html#testing-the-configuration">Testing the Configuration</a></li>
 </ul>
+
 
 
