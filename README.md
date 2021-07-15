@@ -42,7 +42,7 @@
 
 <h2>As an administrator, how do I connect to the ownCloud server using a desktop or mobile client?</h2>
 
-<p>OpenID Connect(OIDC) which is an open standard for Single Sign-On(SSO), Identity and Access management helps to connect to the ownCloud server using a desktop or mobile client. It can be used for user authentication and client authorization against an External Identity Provider(IdP).</p>
+<p>OpenID Connect(OIDC) is an open standard for Single Sign-On(SSO), Identity and Access management which helps to connect to the ownCloud server using a desktop or mobile client. It can be used for user authentication and client authorization against an External Identity Provider(IdP).</p>
 
 <p><strong>IMPORTANT:</strong> ownCloud only supports one configured identity provider which is valid for all requests.</p>
 
@@ -78,11 +78,11 @@
 
 <p><strong>IMPORTANT:</strong> You can enable users to connect to the ownCloud server by configuring settings in Server, Users and Login Attributes tabs.</p>
 
-<p><img src="https://doc.owncloud.com/server/admin_manual/_images/apps/user_ldap/ldap-wizard/server-tab.png" alt="alt text" title="" /></p>
-
 <h3>Server tab</h3>
 
 <p>Correctly filling the Server tab's form is mandatory to access to other tabs. A green indicator light appears when the configuration is correct. Hover your cursor over the fields to see some pop-up tooltips.</p>
+
+<p><img src="https://doc.owncloud.com/server/admin_manual/_images/apps/user_ldap/ldap-wizard/server-tab.png" alt="alt text" title="" /></p>
 
 <h3>Users tab</h3>
 
